@@ -30,7 +30,7 @@ The `pandoc-citeproc` filter will automatically generate a references section fo
 
 First you can grab some Bibtex references from Google Scholar and throw them in a `paper.bib` file:
 
-![](bibtex.png)
+![](https://gist.github.com/maxogden/97190db73ac19fc6c1d9beee1a6e4fc8/raw/adaaa9b5c19460d3be42021ef0c1b8e11a8d38fe/bibtex.png)
 
 Then when you render the paper references will get converted automatically if you cite them using the identifier from the bibtex in Markdown like this:
 
