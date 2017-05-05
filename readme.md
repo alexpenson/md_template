@@ -4,6 +4,8 @@ Markdown is the most common format for writing on GitHub, and is what I use for 
 
 ![markdown example](https://gist.githubusercontent.com/maxogden/97190db73ac19fc6c1d9beee1a6e4fc8/raw/c127b99eddbd3491114aefaaa60a124e566d77a5/markdown.png)
 
+The above example is from the [Dat Paper](https://github.com/datproject/docs/tree/master/papers).
+
 ### 1. Install Pandoc
 
 [Pandoc](https://en.wikipedia.org/wiki/Pandoc) is a great tool for converting between different print formats. In this case pandoc will handle these conversions for us, all in one command:
@@ -30,6 +32,26 @@ First you can grab some Bibtex references from Google Scholar and throw them in 
 
 ![](bibtex.png)
 
-Then when you render the paper references will get converted like this:
+Then when you render the paper references will get converted automatically if you cite them using the identifier from the bibtex in Markdown like this:
 
+```
+The seminal work [@pizza2000identification]
+```
 
+### 4. Render it
+
+Once you have `.md` and `.bib` files you can generate a PDF like this:
+
+```
+pandoc --filter pandoc-citeproc --bibliography=paper.bib --variable classoption=twocolumn --variable papersize=a4paper -s paper.md -o paper.pdf
+```
+
+Or generate the intermediate Latex source like this:
+
+```
+pandoc --filter pandoc-citeproc --bibliography=paper.bib --variable classoption=twocolumn --variable papersize=a4paper -s paper.md -t latex -o paper.txt
+```
+
+### 5. Upload it
+
+Now you're ready to post the `.txt`, `.bib`, `.pdf` and `.md` files on a pre-print server, ideally with a CC0 public domain dedication license for maximum openness, and upload it to GitHub so others can access and re-use your research!
