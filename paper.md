@@ -3,7 +3,10 @@ title: "Pizza - A Carbohydrate Based Substrate For Tomato Delivery"
 date: "May 2017"
 author: "Maxwell Ogden, Pizza Enthusiasts Institute"
 figPrefix: "Figure"
+commit: jflsdfa
 ---
+
+%{commit}
 
 # Abstract
 
