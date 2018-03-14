@@ -8,9 +8,10 @@ brew install pandoc pandoc-citeproc pandoc-crossref
 
 Install haskell in order to install the pandoc-docx-pagebreak filter
 ```
+brew install haskell-stack
+
 git clone git@github.com:alexstoick/pandoc-docx-pagebreak.git
 cd pandoc-docx-pagebreak
-brew install haskell-stack
 stack install --local-bin-path /usr/local/bin pandoc-docx-pagebreak
 ```
 
