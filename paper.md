@@ -17,7 +17,7 @@ PAGEBREAK
 
 For an example of pizza, see @fig:figure0
 
-![It's Pizza](figs/pizza.png){#fig:figure0}
+![It's Pizza](figs/circle.pdf.png){#fig:figure0}
 
 # Algorithm
 

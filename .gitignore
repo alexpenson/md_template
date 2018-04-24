@@ -1,3 +1,5 @@
 *~
 ~*
 *.docx
+!styles.docx
+figs/*.png
